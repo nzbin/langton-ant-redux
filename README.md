@@ -1,1 +1,1 @@
-# Langton-ant
+# Langton's ant built with React and Redux

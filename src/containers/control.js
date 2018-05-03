@@ -8,23 +8,21 @@ class Control extends Component {
 
     render() {
         return (
-            <div className="controls">
-                <div className="buttons">
-                    <Button
-                        handleClick={() => this.clear()}
-                        title={'Clear'}
-                        icon={'fa fa-undo'}
-                    />
-                    <Button
-                        handleClick={() => this.togglePlay()}
-                        icon={this.props.playState.isRunning ? 'fa fa-pause' : 'fa fa-play'}
-                    />
-                    <Button
-                        handleClick={() => this.props.next()}
-                        icon={'fa fa-step-forward'}
-                    />
-                </div>
-            </div>
+            <p className="controls">
+                <Button
+                    handleClick={() => this.clear()}
+                    title={'Clear'}
+                    icon={'fa fa-undo'}
+                />
+                <Button
+                    handleClick={() => this.togglePlay()}
+                    icon={this.props.playState.isRunning ? 'fa fa-pause' : 'fa fa-play'}
+                />
+                <Button
+                    handleClick={() => this.props.next()}
+                    icon={'fa fa-step-forward'}
+                />
+            </p>
         )
     }
 
@@ -33,7 +31,7 @@ class Control extends Component {
             clearInterval(this.props.playState.timerId);
             this.props.stop();
         } else {
-            let interval = setInterval(this.props.next, 5);
+            let interval = setInterval(this.props.next, 10);
             this.props.play(interval);
         }
     }

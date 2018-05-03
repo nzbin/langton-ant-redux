@@ -37,8 +37,10 @@ h1 {
 
 .cell {
     position: relative;
-    width: 6px;
-    height: 6px;
+    width: 1vw;
+    height: 1vw;
+    max-width: 7px;
+    max-height: 7px;
     border: 1px solid #ddd;
     +.cell {
         margin-left: -1px;
@@ -53,7 +55,6 @@ h1 {
 }
 
 .controls {
-    margin-bottom: 10px;
     user-select: none;
 }
 

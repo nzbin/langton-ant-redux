@@ -1,12 +1,12 @@
 # Langton's ant
 
-Langton's ant is a two-dimensional universal Turing machine with a very simple set of rules which built with React and Redux.
+Langton's ant is a two-dimensional universal Turing machine with a very simple set of rules.
+
+Read more details about Langton's ant on the [Wikipedia Page](https://en.wikipedia.org/wiki/Langton's_ant).
 
 [Try this demo on your browser](https://nzbin.github.io/langton-ant-redux/)
 
 > Recommended opening on Chrome.
-
-Read details of Langton's ant on the [Wikipedia Page](https://en.wikipedia.org/wiki/Langton's_ant).
 
 ## Running the code
 

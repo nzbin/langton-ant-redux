@@ -8,21 +8,23 @@ class Control extends Component {
 
     render() {
         return (
-            <p className="controls">
+            <div className="controls">
                 <Button
                     handleClick={() => this.clear()}
-                    title={'Clear'}
+                    title={'clear'}
                     icon={'fa fa-undo'}
                 />
                 <Button
                     handleClick={() => this.togglePlay()}
+                    title={'play'}
                     icon={this.props.playState.isRunning ? 'fa fa-pause' : 'fa fa-play'}
                 />
                 <Button
                     handleClick={() => this.props.next()}
+                    title={'next'}
                     icon={'fa fa-step-forward'}
                 />
-            </p>
+            </div>
         )
     }
 

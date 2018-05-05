@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 class Counter extends Component {
     render() {
         return (
-            <p className="counter" >
+            <div className="counter" >
                 Steps: {this.props.generations}
-            </p>
+            </div>
         )
     }
 }

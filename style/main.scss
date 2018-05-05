@@ -18,33 +18,31 @@ h1 {
 }
 
 .container {
-    padding: 0 20px;
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .board{
-    margin-bottom: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin-bottom: 1em;
 }
 .row {
-    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: auto;
-    +.row {
-        margin-top: -1px;
-    }
 }
 
 .cell {
     position: relative;
-    width: 1vw;
-    height: 1vw;
-    max-width: 7px;
-    max-height: 7px;
-    border: 1px solid #ddd;
-    +.cell {
-        margin-left: -1px;
-    }
+    float: left;
+    width: 1.25%;
+    padding-bottom: calc(1.25% - 1px);
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
     &:hover:not(.black) {
         background: #DDD;
     }
@@ -55,28 +53,34 @@ h1 {
 }
 
 .controls {
+    float: left;
     user-select: none;
 }
 
 .button {
     display: inline-block;
-    margin-right: 0.4em;
+    min-width: 2.2em;
     padding: 0.3em 0.7em;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.5em;
     background: $color-primary;
     color: #fff;
+    text-align: center;
     cursor: pointer;
+
+    + .button {
+        border-left: 1px solid darken($color-primary,5%);
+    }
 }
 
 .button:hover {
     background: lighten($color-primary,5%);
 }
 
-.fa-pause,
-.fa-play,
-.fa-step-forward {
-    width: 1em;
-    text-align: center;
+.counter{
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+    line-height: 1.5em;
 }

@@ -6,7 +6,7 @@ import Counter from '../containers/counter';
 
 export default () => (
     <div>
-        <h1>Langton's Ant Built with React and Redux</h1>
+        <h1>Langton's Ant ( React + Redux )</h1>
         <Board />
         <Control />
         <Counter />

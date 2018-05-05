@@ -1,4 +1,6 @@
 $color-primary: rgb(103, 58, 183);
+$grid-width: 1.428%;
+$grid-height: calc(1.428% - 1px);
 
 *,
 *:before,
@@ -20,7 +22,7 @@ h1 {
 .container {
     max-width: 30em;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 .7em;
 }
 
 .board{
@@ -38,8 +40,8 @@ h1 {
 .cell {
     position: relative;
     float: left;
-    width: 1.25%;
-    padding-bottom: calc(1.25% - 1px);
+    width: $grid-width;
+    padding-bottom: $grid-height;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
 
@@ -54,12 +56,13 @@ h1 {
 
 .controls {
     float: left;
+    margin-bottom: 1em;
     user-select: none;
 }
 
 .button {
     display: inline-block;
-    min-width: 2.2em;
+    min-width: 2.4em;
     padding: 0.3em 0.7em;
     font-size: 1em;
     font-weight: 400;

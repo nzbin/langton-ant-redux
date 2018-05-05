@@ -73,8 +73,8 @@ const advanceGrid = function (grid = []) {
     return gameState;
 }
 
-const GIRD_HEIGHT = 80;
-const GIRD_WIDTH = 80;
+const GIRD_HEIGHT = 70;
+const GIRD_WIDTH = 70;
 const initialGrid = makeGrid(GIRD_HEIGHT, GIRD_WIDTH);
 
 const ant = {

@@ -1,11 +1,3 @@
-export const toggleAlive = (x, y) => {
-    return {
-        type: 'TOGGLE_ALIVE',
-        x,
-        y
-    }
-}
-
 export const next = () => {
     return {
         type: 'NEXT'

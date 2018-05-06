@@ -19,7 +19,7 @@ Checkout this repo and
 
 The demo will be running at http://localhost:8080/
 
-## Deploying the code
+## Building
 
 To build the code, run:
 

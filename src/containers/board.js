@@ -13,6 +13,7 @@ class Board extends Component {
                             <Cell
                                 key={j}
                                 black={cell.status}
+                                ant={cell.ant}
                             />
                         )}
                     </ul>

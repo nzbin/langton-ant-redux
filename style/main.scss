@@ -1,4 +1,4 @@
-$color-primary: rgb(103, 58, 183);
+$color-primary: #673ab7;
 $grid-width: 1.428%;
 $grid-height: calc(1.428% - 1px);
 
@@ -20,9 +20,8 @@ h1 {
 }
 
 .container {
-    max-width: 30em;
+    width: calc(32em + 1px);
     margin: 0 auto;
-    padding: 0 .7em;
 }
 
 .board{
@@ -52,6 +51,18 @@ h1 {
 
 .black {
     background: $color-primary;
+}
+
+.ant{
+    position: relative;
+    &:before{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        width:100%;
+        height:100%;
+        border: 1px solid #e91e63;
+    }
 }
 
 .controls {

@@ -13,7 +13,7 @@ h1 {
   font-weight: 500; }
 
 .container {
-  width: calc(32em + 1px);
+  max-width: calc(32em + 1px);
   margin: 0 auto; }
 
 .board {

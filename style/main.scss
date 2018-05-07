@@ -20,7 +20,7 @@ h1 {
 }
 
 .container {
-    width: calc(32em + 1px);
+    max-width: calc(32em + 1px);
     margin: 0 auto;
 }
 

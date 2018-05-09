@@ -15,8 +15,8 @@ Read more details about Langton's ant on the [Wikipedia Page](https://en.wikiped
 Checkout this repo and
 
 ```
-> npm install
-> npm start
+$ npm install
+$ npm start
 ```
 
 The demo will be running at http://localhost:8080/
@@ -26,5 +26,5 @@ The demo will be running at http://localhost:8080/
 To build the code, run:
 
 ```
-> npm run build
+$ npm run build
 ```

@@ -53,6 +53,9 @@ h1 {
 .controls {
   float: left;
   margin-bottom: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; }
 
 .button {

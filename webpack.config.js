@@ -1,6 +1,5 @@
 const path = require('path');
 
-const autoprefixer = require('autoprefixer');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 
@@ -63,7 +62,9 @@ if (TARGET === 'start' || !TARGET) {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          // { loader: 'postcss-loader', options: { parser: 'sugarss', exec: true } }
+          { loader: 'postcss-loader',
+			options: {}
+		  }
         ],
         include: PATHS.styles
       },
@@ -72,8 +73,10 @@ if (TARGET === 'start' || !TARGET) {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          // { loader: 'postcss-loader', options: { parser: 'sugarss', exec: true } },
-          { loader: 'sass-loader' }
+          { loader: 'sass-loader' },
+		  { loader: 'postcss-loader',
+			options: {}
+		  }
         ],
         include: PATHS.styles
       }
@@ -93,7 +96,7 @@ if (TARGET === 'build') {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: "css-loader"
+          use: "css-loader!postcss-loader"
         }),
         include: PATHS.styles
       },
@@ -101,7 +104,7 @@ if (TARGET === 'build') {
         test: /\.scss$|.sass$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: "css-loader!sass-loader"
+          use: "css-loader!sass-loader!postcss-loader"
         }),
         include: PATHS.styles
       }

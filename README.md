@@ -4,7 +4,7 @@ Langton's ant is a two-dimensional universal Turing machine with a very simple s
 
 Read more details about Langton's ant on the [Wikipedia Page](https://en.wikipedia.org/wiki/Langton's_ant).
 
-![Langton's ant](http://images.cnblogs.com/cnblogs_com/nzbin/1106740/o_langton-ant.gif)
+![Langton's ant](https://images.cnblogs.com/cnblogs_com/nzbin/1106740/o_langton-ant.gif)
 
 [Try this demo on your browser](https://nzbin.github.io/langton-ant-redux/)
 
